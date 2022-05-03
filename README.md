@@ -20,7 +20,7 @@ graph TD;
     StudentController-->Server
 ```
 
-Implemente 3 funciones: 
+Implementé 3 funciones: 
 
 `getAllStudents`, `getStudentsByCertification` y `getStudentsWithCreditsOver500`.
 Cada una fue creada en StudentService, con el parametro de la ruta, en cada función se realizaron los procesos necesarios a partir de llamar el archivo JSON con la funcion `ReadJSONFile` de la clase Reader.
