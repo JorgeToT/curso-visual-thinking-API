@@ -1,23 +1,26 @@
 # <div align = "center"> Curso de Visual Thinking API - Code Challenge 🚀</div>
 
+Este proyecto consiste en una aplicación web que permite visualizar los datos de una base de datos en formato JSON.
+
 ## Dependencias:
 
+Para este proyecto se utilizaron las siguientes dependencias:
 - [Jest](https://jestjs.io/) 
 - [Express](https://expressjs.com/)
 - [ESLint](https://eslint.org/)
 
 Empezando por jest, la utilicé para realizar las pruebas unitarias.
 Después de esto, utilicé Express para crear el servidor y así poner en funcionamiento los endpoints requeridos.
-Para finalizar, utilicé el eslint para realizar las pruebas de estilo.
+Para finalizar, utilicé el eslint para realizar las pruebas de estilo. se utilizaron las siguientes herram
 
 ## Componentes: 
 
 ```mermaid
 graph TD;
-    Data-->Reader;
-    Reader-->StudentService;
-    StudentService-->StudentController
-    StudentController-->Server
+    Database-->|Impoort data JSON|Reader;
+    StudentService-->|Import functions|StudentController;
+    Reader-->|Implement data to functions|StudentController
+    StudentController-->|Show data as JSON|Server
 ```
 
 Implementé 3 funciones: 
@@ -30,8 +33,9 @@ Luego de crear dichas funciones, fueron usadas en el controlador StudentControll
 Con eso creado, los endpoints fueron implementados en el servidor.
 
 ## Funcionamiento:
-
-To run the server `npm run serve`
+Instalar dependencias: `npm install`
+Correr pruebas unitarias: `npm run test`
+Para correr el servidor `npm run serve`
 
 | Endpoint | Request | Response |
 |---|---|---|
@@ -40,11 +44,14 @@ To run the server `npm run serve`
 | `localhost:3000/students/credits` | `localhost:3000/students/credits` | Name of students with credits over 500 |
 
 ## Demostración:
+`localhost:3000/students`
 
 ![](./img/students.png)
 
+`localhost:3000/students/certification`
 
 ![](./img/certification.png)
 
+`localhost:3000/students/credits`
 
 ![](./img/credits.png)
