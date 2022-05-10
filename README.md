@@ -52,7 +52,7 @@ Para correr el servidor `npm run serve`
 ## Demostración:
 `localhost:3000/students`
 
-![](./img/students.png)
+![Explorers](https://user-images.githubusercontent.com/66194789/167534969-39c95b20-3d9c-4ff1-ae80-bb159eb7f8a7.gif)
 
 `localhost:3000/students/certification`
 
