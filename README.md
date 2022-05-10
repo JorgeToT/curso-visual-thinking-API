@@ -2,6 +2,12 @@
 
 Este proyecto consiste en una aplicación web que permite visualizar los datos de una base de datos en formato JSON.
 
+## Requerimentos del Code Challenge
+
+1. Habilitar un endpoint para consultar todos los estudiantes con todos sus campos.
+2. Habilitar un endpoint para consultar los emails de todos los estudiantes que tengan certificación.
+3. Habilitar un endpoint para consultar todos los estudiantes que tengan mayor a 500.
+
 ## Dependencias:
 
 Para este proyecto se utilizaron las siguientes dependencias:
